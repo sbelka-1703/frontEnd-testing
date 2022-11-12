@@ -30,7 +30,7 @@ test('when checkbox is checked, button should be disabled', () => {
 
   const colorButton = screen.getByRole('button', {name: 'Change to blue'})
 
-  const checkboxForColorButton = screen.getByRole('checkbox')
+  const checkboxForColorButton = screen.getByRole('checkbox' ,{name: 'Disable button'})
 
   fireEvent.click(checkboxForColorButton); 
   
